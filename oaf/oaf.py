@@ -9,7 +9,7 @@ from db import db, User, Raid, Log, PriorActivity
 from Verification import Verification
 from Whitelist import Whitelist
 from RaidLogs import RaidLogs
-from OAF import OAF
+from itemfinder import OAF
 from Stop import Stop
 
 load_dotenv()
