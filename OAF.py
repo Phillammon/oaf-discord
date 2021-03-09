@@ -175,7 +175,7 @@ class OAF(commands.Cog):
             if item:
                 embed.description = await self.get_item_description(item)
                 embed.set_thumbnail(url = "http://images.kingdomofloathing.com/itemimages/" + item.image)
-            embed.set_footer(icon_url = "http://images.kingdomofloathing.com/itemimages/oaf.gif", text="Fetched " + cachetime + ". Problems? Message madowl#0828 on discord.")
+            embed.set_footer(icon_url = "http://images.kingdomofloathing.com/itemimages/oaf.gif", text="Fetched " + cachetime + ". Problems? Message Phillammon#2824 on discord.")
         return msg, embed
     
     async def get_item_description(self, item):
