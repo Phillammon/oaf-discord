@@ -1,5 +1,4 @@
 from discord.ext import commands
-from discord.utils import get
 
 def pm_only():
     async def predicate(context):
@@ -8,13 +7,19 @@ def pm_only():
         return True
     return commands.check(predicate)
 
+stoppers = [
+    263438077865754644,
+    104679335327178752,
+    179048996327784448,
+    145957353487990784,
+    466602373679415307
+]
+
 def team_only(position = 13):
     async def predicate(context):
-        guild = context.bot.get_guild(context.bot.raid_guild)
-        member = guild.get_member(context.author.id)
-        roles = member.roles
-        if member.top_role.position < position and not member.id == 145957353487990784 and discord_admin_id not in roles:
+        if not context.author.id in stoppers:
             await context.channel.send("You do not have the required permissions to run that command.")
             raise commands.MissingPermissions("Not allowed to run this command")
         return True
     return commands.check(predicate)
+
