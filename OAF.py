@@ -149,7 +149,7 @@ class OAF(commands.Cog):
                 else:
                     embed.description = name + " wasn't found in the mall."
                 embed.set_thumbnail(url = "http://images.kingdomofloathing.com/itemimages/" + item.image)
-            embed.set_footer(icon_url = "http://images.kingdomofloathing.com/itemimages/oaf.gif", text="Fetched " + cachetime + ". Problems? Message madowl#0828 on discord.")
+            embed.set_footer(icon_url = "http://images.kingdomofloathing.com/itemimages/oaf.gif", text="Fetched " + cachetime + ". Problems? Message Phillammon#2824 on discord.")
         return msg, embed
 
     async def wiki_link(self, item, ignore_cache = False):
