@@ -10,7 +10,7 @@ idna-ssl==1.1.0
 multidict==4.5.2
 peewee==3.9.5
 pickleDB==0.9.2
-#-e git+git@github.com:python-kol/pykollib.git@15aa8b8d1e0e4ea6c5ad8b955e79e8f05dbef66c#egg=pykollib
+-e git+git@github.com:python-kol/libkol.git@04a3299fcaaca8b59adefd4cbcdd38c721076ad0#egg=libkol
 python-dotenv==0.10.1
 requests==2.21.0
 typing-extensions==3.7.2
